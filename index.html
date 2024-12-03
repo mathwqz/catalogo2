@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de filmes com descrições, imagens e elenco. Faça login para acessar recursos exclusivos!">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#home">Catálogo de Filmes</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><button class="login-btn" onclick="toggleLoginForm()">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="login-form" class="login-form">
+        <h2>Login</h2>
+        <form action="#">
+            <input type="text" placeholder="Usuário" required aria-label="Usuário">
+            <input type="password" placeholder="Senha" required aria-label="Senha">
+            <button type="submit">Entrar</button>
+            <button type="button" class="close-btn" onclick="toggleLoginForm()">Fechar</button>
+        </form>
+    </div>
+
+    <section id="home" class="intro">
+        <h1>Bem-vindo ao Catálogo de Filmes!</h1>
+        <p>Descubra os melhores filmes, suas descrições, imagens e elenco. Faça login para acessar recursos exclusivos.</p>
+    </section>
+
+    <section id="catalogo" class="movie-catalog">
+        <h2>Catálogo de Filmes</h2>
+        <div class="movie-card">
+            <img src="chefao.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>O Poderoso Chefão (1972)</h3>
+                <p class="movie-description">O Patriarca da família Corleone, Vito Corleone, tenta transferir o controle dos negócios da família para seu filho Michael, enquanto enfrenta uma série de desafios. O clássico filme de máfia, dirigido por Francis Ford Coppola, é uma obra-prima do cinema.</p>
+                <p class="movie-actors">Atores: Marlon Brando, Al Pacino, James Caan, Diane Keaton</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="titanic.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>Titanic (1997)</h3>
+                <p class="movie-description">No épico de James Cameron, Jack e Rose vivem um romance proibido a bordo do inafundável RMS Titanic. O filme é uma poderosa história de amor entre duas pessoas de classes sociais diferentes, enquanto o navio enfrenta seu destino trágico.</p>
+                <p class="movie-actors">Atores: Leonardo DiCaprio, Kate Winslet, Billy Zane, Danny Nucci</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="matrix.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>Matrix (1999)</h3>
+                <p class="movie-description">Neo é um programador de computador que descobre que o mundo em que vive é uma simulação criada por máquinas. Juntamente com Morpheus e Trinity, ele começa uma luta pela liberdade da humanidade contra as forças das máquinas.</p>
+                <p class="movie-actors">Atores: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="gladiador.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>Gladiador (2000)</h3>
+                <p class="movie-description">Maximus, um general romano, é traído pelo imperador Commodus e se torna escravo. Sua busca por vingança o leva a se tornar um gladiador, lutando em arenas até conquistar a honra e a justiça.</p>
+                <p class="movie-actors">Atores: Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="inception.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>Inception (A Origem) (2010)</h3>
+                <p class="movie-description">Dom Cobb é um "extrator", alguém que invade os sonhos das pessoas para roubar segredos. Agora, ele tem a chance de realizar o maior roubo de sua carreira: implantar uma ideia na mente de uma pessoa. O filme é uma complexa jornada de sonho dentro de sonhos.</p>
+                <p class="movie-actors">Atores: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="aneis.jpg" alt="capa">
+            <div class="movie-info">
+                <h3>O Senhor dos Anéis: A Sociedade do Anel (2001)</h3>
+                <p class="movie-description">Frodo Bolseiro é incumbido de uma tarefa impossível: destruir o Um Anel, que ameaça destruir o mundo. Acompanhado por uma sociedade formada por seus amigos e outros guerreiros, ele enfrenta diversos perigos na Terra-média para completar sua missão.</p>
+                <p class="movie-actors">Atores: Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Catálogo de Filmes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleLoginForm() {
+            const form = document.getElementById('login-form');
+            form.classList.toggle('visible');
+        }
+    </script>
+</body>
+</html>
